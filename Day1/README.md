@@ -63,7 +63,7 @@ The name *Python* was **not** inspired by the snake! Guido Van Rossum named it a
 
 ---
 
-## 🛠️ How is Python Used?
+##  How is Python Used?
 
 **Step-by-step in real projects:**
 
@@ -141,4 +141,110 @@ Most people only know "Python" — but here are lesser-known names and versions:
 > When you type `python` on your computer, you're almost always running **CPython** — but nobody calls it that!
 
 ---
+
+# Two Types of Programming Languages
+
+---
+
+## Traditional vs Object-Oriented
+
+| Feature | Traditional (Procedural) | Object-Oriented (OOP) |
+|---|---|---|
+| **Approach** | Step by step instructions | Organized around objects and classes |
+| **Focus** | Functions and logic | Data and behavior together |
+| **Code Reuse** | Limited | High — through inheritance |
+| **Data Security** | Low — data is open | High — data is encapsulated |
+| **Real World Modeling** | Difficult | Natural and intuitive |
+| **Examples** | C, COBOL, Fortran, Pascal | Python, Java, C++, Ruby |
+
+---
+
+## Traditional Programming (Procedural)
+
+Code is written as a **sequence of instructions** from top to bottom, using functions.
+
+```c
+// C Language - Traditional
+#include <stdio.h>
+
+void greet() {
+    printf("Hello World");
+}
+
+int main() {
+    greet();   // just calling functions
+    return 0;
+}
+```
+
+**Characteristics:**
+- Follows a top-down approach
+- Data and functions are separate
+- Hard to manage in large projects
+- No concept of classes or objects
+
+---
+
+## Object-Oriented Programming (OOP)
+
+Code is organized around **objects** that contain both data and behavior together.
+
+```python
+# Python - Object Oriented
+class Student:
+    def __init__(self, name, age):
+        self.name = name       # data
+        self.age = age
+
+    def greet(self):           # behavior
+        print(f"Hello, I am {self.name}")
+
+s = Student("Rahul", 20)
+s.greet()    # Hello, I am Rahul
+```
+
+**Characteristics:**
+- Follows a bottom-up approach
+- Data and functions are together inside objects
+- Easy to manage large projects
+- Built on 4 pillars — Inheritance, Polymorphism, Encapsulation, Abstraction
+
+---
+
+## The 4 Pillars of OOP (Quick View)
+
+```
+OOP
+├── Inheritance     → Child class gets parent class properties
+├── Polymorphism    → Same method, different behavior
+├── Encapsulation   → Hiding data inside a class
+└── Abstraction     → Showing only what is necessary
+```
+
+---
+
+## Other Classifications You Should Know
+
+Programming languages are also classified as:
+
+| Type | Description | Examples |
+|---|---|---|
+| **Low Level** | Close to machine/hardware | Assembly, Machine Code |
+| **High Level** | Close to human language | Python, Java, C++ |
+| **Compiled** | Whole code converted at once | C, C++, Rust |
+| **Interpreted** | Code runs line by line | Python, JavaScript |
+| **Scripting** | Automates tasks | Bash, Python, Ruby |
+| **Functional** | Based on mathematical functions | Haskell, Lisp |
+| **Declarative** | You say WHAT not HOW | SQL, HTML |
+
+---
+
+## Simple Real Life Analogy
+
+> **Traditional Programming** is like giving someone turn-by-turn directions to cook a dish — step 1, step 2, step 3...
+>
+> **OOP** is like giving them a fully equipped kitchen with labeled compartments — everything organized, reusable, and easy to find.
+
+---
+
 
